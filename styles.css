@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+   background: url(https://img.freepik.com/free-photo/notebook-template-with-floral-decoration_23-2147982561.jpg?size=626&ext=jpg&ga=GA1.2.927287044.1672550458&semt=ais);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-repeat:no-repeat;
+   background-size: cover;
+    color: rgb(31, 0, 78);
+
+}
+
+/* styling input element & button */ 
+header,
+form {
+    display: flex;
+    min-height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.6rem;
+    border: none;
+    font-size: 1.2rem;
+    background: white;
+}
+
+form button {
+    color:#000000;
+    background: rgb(251, 213, 213);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #010730;
+    color: rgb(250, 208, 208);
+}
+
+/* styling dropdown*/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #2e0e8f;
+    width: 8rem;
+    cursor: pointer;
+    padding: 0.7rem;
+}
+
+.select::after {
+    content: "\25bc";
+    position: absolute;
+    color: #13045b;
+    top: 7px;
+    right: 6px;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: #292f58;
+}
+
+/* styling container where tasks are shown*/
+.todo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 3px auto;
+    background: white;
+    color: #000000;
+    display: flex;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.complete_btn,
+.delete_btn {
+    padding: 0.5rem;
+    background: #ff3700;
+    color: white;
+    border: none;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete_btn {
+    background: rgb(67, 89, 179);
+}
+
+.complete_btn:active {
+    background: rgb(0, 51, 128);
+}
+
+.delete_btn:active {
+    background: #b65337;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+/* styling completed tasks */
+.completedItem {
+    text-decoration: line-through;
+    opacity: 0.5;
+    transform: scale(0.96);
+}
+
+/* deleting tasks */
+.fall {
+    transform: translateY(4rem) scale(0.4) rotateZ(20deg);
+    opacity: 0;
+}
+.foot{
+text-align: center;
+font-size:x-large ;
+}
